@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>	
+
+</head>
+<body>
+
+<p>First Name : <span id="Firstname"></span></p>
+<p>Last Name : <span id="Lastname"></span></p>
+<p>Email :<span id="Email"></span></p>
+<p>Phone :<span id="Phone"></span></p>
+<script>
+		function Person(firstName, lastName, email, phone){
+			 this.firstName = firstName;
+			 this.lastName = lastName;
+			 this.email = email;
+			 this.phone = phone;
+			
+			 this.getInfo = function(){
+				return this.firstName, this.lastName, this.email, this.phone;
+			}
+			
+		};
+		
+		
+		
+			var person1 = new Person( "David" , "Osias" , "johndoe@gmail.com" , "770-555-5555" );
+			
+			document.getElementById("Firstname").innerHTML = person1.firstName;
+			document.getElementById("Lastname").innerHTML = person1.lastName;
+			document.getElementById("Phone").innerHTML = person1.phone;
+			document.getElementById("Email").innerHTML = person1.email;
+		
+	</script>
+
+
+</body>
+</html>
